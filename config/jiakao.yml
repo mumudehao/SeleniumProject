@@ -1,0 +1,19 @@
+# s平台
+platformName : "android"
+# 版本号
+platformVersion : "5.1.1"
+# 设备名
+deviceName : "127.0.0.1:62001"
+# 测试包名
+appPackage : "com.handsgo.jiakao.android"
+# 要打开的界面名称
+appActivity : ".splash.Login"
+# "appActivity":".main.activity.MainActivity",
+
+# 不重置
+noRest : False
+
+ip : '127.0.0.1'
+port :  '4723'
+
+
