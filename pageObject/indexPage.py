@@ -8,16 +8,16 @@ from selenium import webdriver
 
 class IndexPage(BasePage):
 
-    url = 'https://www.baidu.com/'
+    url = BasePage.url
 
-    search_input = (By.NAME,'wd')
-    search_button = (By.ID,'su')
+    input_el = (By.NAME, 'wd')
+    button = (By.ID, 'ai-topsearch')
 
     # 核心业务
     def search(self,txt):
         self.visit()
-        self.input_(self.search_input,txt)
-        self.click_(self.search_button)
+        self.input_(self.input_el,txt)
+        self.click_(self.button)
 
 if __name__ == '__main__':
     driver = webdriver.Chrome()

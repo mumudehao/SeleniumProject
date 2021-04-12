@@ -19,7 +19,7 @@ class TestCase(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.driver.quit()
 
-    @file_data('../config/user.yml')
+    @file_data('../config/user.yaml')
     def test_1_login(self,userName,passwd):
         self.lp.login(userName,passwd)
         sleep(3)

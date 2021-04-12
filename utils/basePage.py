@@ -9,6 +9,7 @@ from selenium import webdriver
 
 class BasePage:
 
+    url='http://39.98.138.157/shopxo/index.php'
     # # 虚构driver对象
     # driver = webdriver.Remote(ip,info)
 
